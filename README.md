@@ -16,26 +16,26 @@ Open in browser: [http://localhost:3000](http://localhost:3000)
 
 To create a new model:
 
-    docker-compose execute web rails g model NAME [field[:type][:index] field[:type][:index]] [options]
+    docker-compose exec web rails g model NAME [field[:type][:index] field[:type][:index]] [options]
     #
     # example:
     #
-    docker-compose execute web rails g model HighScore game:string score:integer
+    docker-compose exec web rails g model HighScore game:string score:integer
 
 > make sure to run DB migrations
 
-    docker-compose execute web rails db:migrate
+    docker-compose exec web rails db:migrate
 
 
 #### Controller
 
 To create a new controller:
 
-    docker-compose execute web rails g controller NAME [action action] [options]
+    docker-compose exec web rails g controller NAME [action action] [options]
     #
     # example:
     #
-    docker-compose execute web rails g controller CreditCards open debit credit close
+    docker-compose exec web rails g controller CreditCards open debit credit close
 
 
 #### Scaffold
@@ -47,12 +47,12 @@ Syntax is the same as for model generator.
 
 Example:
 
-    docker-compose execute web rails g scaffold HighScore game:string score:integer
+    docker-compose exec web rails g scaffold HighScore game:string score:integer
 
 
 > make sure to run DB migrations
 
-    docker-compose execute web rails db:migrate
+    docker-compose exec web rails db:migrate
 
 ## Troubleshooting
 
