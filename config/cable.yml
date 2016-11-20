@@ -1,0 +1,22 @@
+default: &default
+  adapter: redis
+  url: redis://<%= ENV['REDIS_ENDPOINT'] %>:<%= ENV['REDIS_PORT'] %>/1
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+#development:
+#  adapter: async
+
+#test:
+#  adapter: async
+
+#production:
+#  adapter: redis
+#  url: redis://localhost:6379/1
