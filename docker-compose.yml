@@ -6,7 +6,7 @@ services:
     env_file:
       - db.env
     volumes:
-      - ./volumes/db/data:/var/lib/postgresql/data
+      - db-data:/var/lib/postgresql/data
     ports:
       - '5432'
     restart: always
@@ -36,4 +36,6 @@ services:
 
 volumes:
   redis-data:
+    driver: local
+  db-data:
     driver: local
