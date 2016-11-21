@@ -7,8 +7,11 @@
 ## Development Environment
 
     docker-compose up
+    docker-compose exec web rails db:migrate
 
 Open in browser: [http://localhost:3000](http://localhost:3000)
+
+> Sign-Up in order to have access to the Admin section
 
 ### Day-to-day development process
 
