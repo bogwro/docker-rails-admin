@@ -18,7 +18,7 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'rails_admin', '~> 1.1'
 gem 'devise', '~> 4.2'
-gem 'cancancan', '~> 1.15'
+# gem 'cancancan', '~> 1.15'
 gem 'paper_trail', '~> 5.2', '>= 5.2.2'
 
 # Use jquery as the JavaScript library
